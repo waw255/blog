@@ -4,25 +4,13 @@
   
     
     <entry>
-      <title>linux</title>
-      <link href="/2021/09/07/linux/"/>
-      <url>/2021/09/07/linux/</url>
+      <title>1-MySQL语句速通</title>
+      <link href="/2021/09/28/1-MySQL%E9%80%9F%E9%80%9A/"/>
+      <url>/2021/09/28/1-MySQL%E9%80%9F%E9%80%9A/</url>
       
-        <content type="html"><![CDATA[<h2 id="初识Linux"><a href="#初识Linux" class="headerlink" title="初识Linux"></a>初识Linux</h2><ul><li>linux是由UNIX演变而来</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Linux </category>
-          
-      </categories>
+        <content type="html"><![CDATA[<h1 id="MySQL基础语法"><a href="#MySQL基础语法" class="headerlink" title="MySQL基础语法"></a>MySQL基础语法</h1><pre><code class="sql">-- 添加、删除表create table [表名] ( [字段名] [数据类型、约束、属性]);drop table [表名]; -- 添加、删除子段alter table [表名] add [新建字段名] [数据类型、约束、属性]; alter table [表名] drop [字段名];-- 修改表名alter table [旧表名] rename as [新表名];-- 修改字段alter table [表名] modify [字段名] [数据类型、约束、属性];-- 修改约束alter table [表名] change [旧字段名] [新字段名] [数据类型];-- 修改字段名(外加数据类型)，同时也会清空注释，需要配合modify使用。-- 显示创建数据库show create database [数据库名];-- 显示创建表show create table [表名];-- 显示表定义desc [表名];describe [表名];-- 查询语句Select * from [表名]</code></pre>]]></content>
       
       
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
       
     </entry>
     

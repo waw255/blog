@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Sparkling_blog</title>
+  <title>1-MySQL语句速通 | Sparkling_blog</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Sparkling_blog">
+  <meta name="description" content="1-MySQL语句速通 | Sparkling_blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="一个不干正事的二次元小红客">
 <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="icon" href="/img/avatar.jpg">
+<link rel="icon" href="/img/avatar.png">
 
 <link href="/css/style.css?v=1.1.0" rel="stylesheet">
 
@@ -59,12 +59,12 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
     <img class="avatar"
-         src="/img/avatar.jpg"/>
+         src="/img/avatar.png"/>
 </a>
 <div class="author">
     <span>Sparkling_water</span>
@@ -110,20 +110,6 @@
         </div>
     </li>
     
-        
-            
-                <li>
-                    <div data-rel="Linux">
-                        
-                        Linux
-                        <small>(1)</small>
-                        
-                    </div>
-                    
-                </li>
-            
-        
-    
 </ul>
 <div class="left-bottom">
     <div class="menus">
@@ -145,7 +131,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="1">
-<input type="hidden" id="yelog_site_word_count" value="10">
+<input type="hidden" id="yelog_site_word_count" value="185">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -190,10 +176,6 @@
     <input id="tag-search" />
     <div class="tag-wrapper">
         
-            <li class="article-tag-list-item">
-                <i class="iconfont icon-tag"></i><a>教程</a>
-            </li>
-        
     </div>
 
 </div>
@@ -205,12 +187,12 @@
     
     <nav id="title-list-nav">
         
-        <a  class="全部文章 Linux "
-           href="/2021/09/07/linux/"
-           data-tag="教程"
+        <a  class="全部文章 "
+           href="/2021/09/28/1-MySQL%E9%80%9F%E9%80%9A/"
+           data-tag=""
            data-author="" >
-            <span class="post-title" title="linux">linux</span>
-            <span class="post-date" title="2021-09-07 10:39:26">2021/09/07</span>
+            <span class="post-title" title="1-MySQL语句速通">1-MySQL语句速通</span>
+            <span class="post-date" title="2021-09-28 15:26:42">2021/09/28</span>
         </a>
         
         <div id="no-item-tips">
@@ -229,12 +211,56 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-1-MySQL速通" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Esparkling"><span class="toc-text">关于sparkling</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">1-MySQL语句速通</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-09-28 15:27:47'>2021-09-28 15:26</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:185</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-text">MySQL基础语法</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -247,33 +273,43 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于sparkling"><a href="#关于sparkling" class="headerlink" title="关于sparkling"></a>关于sparkling</h2><p>sparkling<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p><code>3-hexo</code> 主题使用交流可以加 Q群: <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e8cf083cc097141eaf323396f1766809b8e90ff00c67bb441898f672892f6904"><img data-ignore border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="3-hexo使用交流" title="3-hexo使用交流"></a></p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="MySQL基础语法"><a href="#MySQL基础语法" class="headerlink" title="MySQL基础语法"></a>MySQL基础语法</h1><pre><code class="sql">-- 添加、删除表
+create table [表名] ( 
+[字段名] [数据类型、约束、属性]
+);
+drop table [表名]; 
+-- 添加、删除子段
+alter table [表名] add [新建字段名] [数据类型、约束、属性]; 
+alter table [表名] drop [字段名];
+-- 修改表名
+alter table [旧表名] rename as [新表名];
+-- 修改字段
+alter table [表名] modify [字段名] [数据类型、约束、属性];-- 修改约束
+alter table [表名] change [旧字段名] [新字段名] [数据类型];-- 修改字段名(外加数据类型)，同时也会清空注释，需要配合modify使用。
 
-        </article>
-        
-        
+-- 显示创建数据库
+show create database [数据库名];
+-- 显示创建表
+show create table [表名];
+-- 显示表定义
+desc [表名];
+describe [表名];
+-- 查询语句
+Select * from [表名]
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论. </span>
+    </div>
+</article>
+
+
+
+
+
     <div id="comments"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 
@@ -282,7 +318,7 @@
         var gitalk = new Gitalk({
             clientID: '1fb06c94a88c8d9b722f',
             clientSecret: '7776173e9353abaf8bd6ca1035c25581d643503e',
-            repo: 'git@github.com:waw255/waw255.github.io.git',
+            repo: 'https://github.com/waw255/Comment.git',
             owner: 'waw255',
             admin: ['waw255'],
             id: decodeURI(location.pathname),
@@ -295,6 +331,13 @@
 </script>
 
 
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -303,11 +346,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 </body>
@@ -713,14 +756,6 @@
 
     /* 背景图样式 */
     
-    #post {
-        background: url(/img/bg.jpeg);
-    }
-    
-    
-    #post .index {
-        background: url(/img/bg.jpeg);
-    }
     
 
 
