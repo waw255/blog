@@ -308,23 +308,16 @@ Select * from [表名]
 
 
 
-    <div id="comments"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-
-<script src="/js/gitment.js"></script>
-
-<script>
-    var gitment = new Gitment({
-        id: 'https://waw255.github.io/2021/09/28/1-MySQL%E9%80%9F%E9%80%9A/', // 可选。默认为 location.href
-        owner: 'waw255',
-        repo: 'waw255.github.io',
-        oauth: {
-            client_id: '1d17716adfc0d0da2db2',
-            client_secret: '7967760307210c01e6e434f7a13c897010691772',
-        },
-    })
-    gitment.render('comments')
-</script>
+    <div id="comments">
+    <script src="https://utteranc.es/client.js"
+            repo="Comment"
+            issue-term="pathname"
+            theme="github-light"
+            label="utteranc"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
 
 
 
