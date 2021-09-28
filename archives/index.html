@@ -42,8 +42,6 @@
 
 
 
-<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
-
 <script src="/js/iconfont.js?v=1.1.0" ></script>
 
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -257,23 +255,21 @@
         
         
     <div id="comments"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
 
-<script type="text/javascript">
-    $.getScript('/js/gitalk.js', function () {
-        var gitalk = new Gitalk({
-            clientID: '1d17716adfc0d0da2db2',
-            clientSecret: '7967760307210c01e6e434f7a13c897010691772',
-            repo: 'Comment',
-            owner: 'waw255',
-            admin: ['waw255'],
-            id: decodeURI(location.pathname),
-            distractionFreeMode: 'true',
-            language: 'zh-CN',
-            perPage: parseInt('10',10)
-        })
-        gitalk.render('comments')
+<script src="/js/gitment.js"></script>
+
+<script>
+    var gitment = new Gitment({
+        id: 'https://waw255.github.io/', // 可选。默认为 location.href
+        owner: 'waw255',
+        repo: 'Comment',
+        oauth: {
+            client_id: '1d17716adfc0d0da2db2',
+            client_secret: '7967760307210c01e6e434f7a13c897010691772',
+        },
     })
+    gitment.render('comments')
 </script>
 
 
